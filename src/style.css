@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #6476FF;
+  --text-primary-color: #18181D;
+  --color-secondary: #EBEFF4;
+  --border: 1px solid #BABEC6;
+  --border-2: 
+  --border-checkbox: 1px solid #252F3B;
+}
+
+* {
+  font-family: sans-serif;
+}
+.ct_combobox {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+}
+
+.ct_combobox .ct_input {
+  box-sizing: border-box;
+  width: 100%;
+  text-overflow: ellipsis;
+  height: 40px;
+  border-radius: 8px;
+  border: var(--border);
+  padding: 11px 22px 11px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-primary-color);
+  background-color: #fff;
+  appearance: none; 
+}
+
+
+.ct_combobox .ct_input:focus {
+  outline-color: var(--primary-color); 
+  color: var(--primary-color);
+}
+
+.ct_combobox .down-arrow {
+  box-sizing: border-box;
+  position: absolute;
+  width: 32px;
+  right: 0px;
+  height: 40px;
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ct_listbox {
+  border-radius: 12px;
+  border: 1px solid var(color-secondary);
+  overflow: hidden;
+  box-shadow: 0px 20px 40px 0px #00000040;
+}
+
+
+
+.ct_listbox-opt-item {
+  padding: 12px 12px;
+}
+
+.ct_listbox-opt-focus {
+  background-color: #6476FF;
+}
+
+.ct_listbox-opt-focus * {
+  color: #fff !important;
+}
+
+.ct_listbox-opt-focus path {
+  stroke: #fff !important;
+}
+
+.ct_listbox-tick {
+  visibility: hidden;
+  padding-right: 12px;
+}
+
+.ct_listbox-options {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+.ct_listbox-option {
+  width: calc(100% - 40px) !important;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  display: inline-block;
+  cursor: context-menu;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.active .ct_listbox-tick {
+  visibility: visible;
+}
+
+.active .ct_listbox-option {
+  color: #6476FF;
+}
+
+.ct_listbox-actions {
+  background-color: var(--color-secondary);
+}
+
+.ct_listbox-action-item {
+  padding: 12px 12px;
+  display:flex;
+  align-items: center;
+}
+
+.ct_listbox-checkbox {
+  padding-right: 6px;
+}
+
+.ct_listbox-checkbox input {
+  position: relative;
+  top: 1px;
+  scale: 1.2;
+  border: 1px solid #252F3B;
+  accent-color: #6476FF;
+  color: #6476FF;
+  left: -4px;
+}
+
+.ct_listbox-checkbox input:hover {
+  box-shadow: none;
+  border: 1px solid #252F3B;
+  
+  outline: none;
+}
+
+.ct_listbox-checkbox {
+  
+}
+
+.ct_listbox-action {
+  color: #454E57;
+  font-size: 14px;
+  font-weight: 600;
+}

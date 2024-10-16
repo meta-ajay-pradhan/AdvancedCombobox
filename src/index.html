@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="ct_combobox">
+    <input class="ct_input" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list"
+      placeholder="Select option" aria-labelledby="headlessui-label-:r2:">
+
+    <button onclick="showDropdown();" class="down-arrow">
+      <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.5 5.10547C4.26605 5.10547 4.06551 5.00592 3.93182 4.84001L0.656453 1.12355C0.422498 0.858088 0.45592 0.493079 0.723297 0.260801C0.990675 0.0617046 1.35832 0.0617051 1.55885 0.327166L4.43316 3.57907C4.46658 3.61225 4.5 3.61225 4.53342 3.57907L7.40773 0.327166C7.64168 0.0617048 8.00933 0.0285217 8.2767 0.2608C8.54408 0.493079 8.5775 0.858088 8.34355 1.12355C8.34355 1.12355 8.34355 1.12355 8.31013 1.15673L5.06818 4.84001C4.93449 5.00592 4.70053 5.10547 4.5 5.10547Z"
+          fill="#011627" />
+      </svg>
+    </button>
+
+    <div class="ct_listbox-container"></div>
+    <!-- <div class="ct_listbox">
+      <div class="ct_listbox-options">
+        <div class="ct_listbox-opt-item">
+          <span class="ct_listbox-tick">
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.3332 1.43945L4.99984 8.77279L1.6665 5.43945" stroke="#6476FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="ct_listbox-option">Amazon Web Services is very very awesome and it works gread</span>
+        </div>
+        <div class="ct_listbox-opt-item active focus">
+          <span class="ct_listbox-tick">
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.3332 1.43945L4.99984 8.77279L1.6665 5.43945" stroke="#6476FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="ct_listbox-option">Amazon Web Services</span>
+        </div>
+        <div class="ct_listbox-opt-item">
+          <span class="ct_listbox-tick">
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.3332 1.43945L4.99984 8.77279L1.6665 5.43945" stroke="#6476FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="ct_listbox-option">Azure</span>
+        </div>
+        <div class="ct_listbox-opt-item">
+          <span class="ct_listbox-tick">
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.3332 1.43945L4.99984 8.77279L1.6665 5.43945" stroke="#6476FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="ct_listbox-option">Azure</span>
+        </div>
+      </div>
+      <div class="ct_listbox-actions">
+        <div class="ct_listbox-action-item">
+          <span class="ct_listbox-checkbox"><input type="checkbox" /></span>
+          <span class="ct_listbox-action">Amazon Web Services</span>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
